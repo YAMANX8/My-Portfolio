@@ -51,7 +51,7 @@
     min-height: 90vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top right, #aaa, #fff);
+    background-image: linear-gradient(to top right, #999, #fff);
 }
 
 .main>div {
@@ -101,7 +101,7 @@
     align-self: flex-end;
 }
 .social-icons a{
-    color:#0C2EE8;
+    color:#D80CE8;
     font-size:2em;
     padding:5px;
 }
