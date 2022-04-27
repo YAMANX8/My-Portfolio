@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,900&display=swap');
-
 /*
   D80CE8
   A30CF2
@@ -21,10 +20,11 @@
 :link, :visited {
     text-decoration: none;
 }
+
 /* component */
 .logo {
     color: #D80CE8;
-    text-transform: uppercase;
+    font-variant: small-caps;
     font-weight: 700;
     font-size: 1.8em;
     text-shadow: 1px 0 white, 0 -1px white, 0 1px white, -1px 0 white;
@@ -45,6 +45,7 @@
 .navigation a:hover {
     color: #D80CE8;
 }
+
 /* the main section */
 .main {
     width: 100%;
@@ -62,7 +63,6 @@
 .main h2 {
     font-size: 1.1em;
     font-weight: 500;
-
 }
 
 .main h2 span {
@@ -71,6 +71,7 @@
     font-weight: 600;
     color: #0C2EE8;
 }
+
 /* style the quote */
 .main h3 {
     font-size: 2em;
@@ -78,9 +79,11 @@
     margin-top: 15px;
     letter-spacing: 5px;
 }
-.main h3 span{
-    color:#5601DB;
+
+.main h3 span {
+    color: #5601DB;
 }
+
 /* style the view work button */
 .btn {
     display: inline-block;
@@ -97,17 +100,75 @@
     background-color: #260CF2;
     transform: scale(1.1);
 }
-.social-icons{
+
+.social-icons {
     align-self: flex-end;
 }
-.social-icons a{
-    color:#D80CE8;
-    font-size:2em;
-    padding:5px;
+
+.social-icons a {
+    color: #D80CE8;
+    font-size: 2em;
+    padding: 5px;
 }
-.social-icons a:hover{
-    color:#260CF2;
+
+.social-icons a:hover {
+    color: #260CF2;
 }
+
+/* the services section */
+.cards {
+    background: linear-gradient(to right bottom, #0C2EE8, #1b0aa0);
+    min-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    color: #eee;
+    font-weight: 800;
+    font-size: 2em;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+/* the cards */
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* the individual card */
+.card {
+    background: #0C2EE8ee;
+    width: 30%;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 0 25px #00000099;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #D80CE8;
+    font-size: 8em;
+    text-align: center;
+    text-shadow: 1px 0 white, 0 -1px white, 0 1px white, -1px 0 white;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 10px;
+    color: #D80CE8;
+}
+
 /* modules */
 header {
     background-color: #0C2EE8;
@@ -119,6 +180,7 @@ header {
     justify-content: space-between;
     padding: 10px 150px;
     min-height: 10vh;
+    top:0;
 }
 
 section {
