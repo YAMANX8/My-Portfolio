@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,900&display=swap');
+
 /*
   #00E836
   #E8BA23
@@ -132,8 +133,9 @@
 /* the cards */
 .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    row-gap: 2em;
 }
 
 /* the individual card */
@@ -168,6 +170,58 @@
     color: #E82334;
 }
 
+/* projects */
+.projects {
+    background-image: linear-gradient(to bottom right, #999, #fff);
+}
+
+.project-card {
+    background-color: #fff;
+    overflow: hidden;
+    width: 30%;
+    min-height: 14em;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-image {
+    opacity: .9;
+    ;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+}
+
+.project-category {
+    font-size: 0.8em;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    margin-top: 10px;
+    color: #0C2EE8;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.more-details {
+    color: #E82334;
+}
+
+.more-details:hover {
+    color: #233DE8;
+}
+
 /* modules */
 header {
     background-color: #0C2EE8;
@@ -184,4 +238,5 @@ header {
 
 section {
     padding: 20px 150px;
+    min-height: 100vh;
 }
