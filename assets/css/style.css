@@ -2,17 +2,18 @@
 
 /* base */
 :root {
-    --main-clr: #0C2EE8;
-    --dark-main-clr: #1b0aa0;
+    --main-clr: #222;
+    --dark-main-clr: #000;
     --secondary-clr: #E82334;
     --handle-clr: #233DE8;
     --mood1-clr: #00E836;
     --mood2-clr: #E8BA23;
+    --mood3-clr: #0C2EE8;
     --off-white: #999;
     --white: #fff;
     --black: #111;
-    /* --main-color: #111;
-    --dark-main-color: #000;
+    /* --main-color: #0C2EE8;
+    --dark-main-color: #1b0aa0;
     --secondary-color: #E82334;
     --handle-clr: #233DE8;
     --mood-color: #00E836;
@@ -48,7 +49,7 @@
 .navigation {
     display: flex;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
 .navigation a {
@@ -84,7 +85,7 @@
     display: inline-block;
     font-size: 3em;
     font-weight: 600;
-    color: var(--main-clr);
+    color: var(--handle-clr);
 }
 
 /* style the quote */
@@ -244,35 +245,44 @@
 .more-details:hover {
     color: var(--handle-clr);
 }
+
 /* the contact section */
-.contact{
-    min-height:84vh;
+.contact {
+    min-height: 84vh;
 }
-.contact .card{
-    width:40%;
+
+.contact .card {
+    width: 40%;
 }
-.contact .icon{
-    font-size:5em;
+
+.contact .icon {
+    font-size: 5em;
 }
-.contact h3{
-    color:var(--white);
+
+.contact h3 {
+    color: var(--white);
 }
-.contact p{
-    color:var(--off-white);
+
+.contact p {
+    color: var(--off-white);
     font-size: 1.5em;
     word-wrap: break-word;
 }
+
 /* copyright */
-.copyright{
-    color:#233DE8;
+.copyright {
+    color: #233DE8;
     font-size: 1.3em;
 }
-footer span{
+
+footer span {
     color: var(--secondary-clr);
 }
-footer .social-icons a{
+
+footer .social-icons a {
     font-size: 1.5em;
 }
+
 /* modules */
 header {
     background-color: var(--main-clr);
@@ -292,9 +302,74 @@ section {
     min-height: 100vh;
 }
 
-footer{
-    padding:2em;
-    background:var(--black);
+footer {
+    padding: 2em;
+    background: var(--black);
     display: flex;
     justify-content: space-between;
+}
+
+/* media query */
+@media screen and (max-width:1023px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0 20px;
+        min-height: 5vh;
+    }
+
+    section {
+        padding: 20px 20px;
+    }
+
+    .main {
+        min-height: 95vh;
+    }
+
+    .contact {
+        min-height: 90vh;
+    }
+
+    .card, .project-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .card, .project-card {
+        width: 95%;
+    }
+
+    .contact .card {
+        width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .navigation {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+
+    .navigation {
+        width: 80%;
+    }
 }
