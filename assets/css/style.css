@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;1,900&display=swap');
 
-/*
-  #00E836
-  #E8BA23
-  #0C2EE8 main
-  #E82334 secondary
-  #233DE8
-*/
 /* base */
 :root {
     --main-clr: #0C2EE8;
@@ -18,7 +11,6 @@
     --off-white: #999;
     --white: #fff;
     --black: #111;
-
     /* --main-color: #111;
     --dark-main-color: #000;
     --secondary-color: #E82334;
@@ -252,7 +244,35 @@
 .more-details:hover {
     color: var(--handle-clr);
 }
-
+/* the contact section */
+.contact{
+    min-height:84vh;
+}
+.contact .card{
+    width:40%;
+}
+.contact .icon{
+    font-size:5em;
+}
+.contact h3{
+    color:var(--white);
+}
+.contact p{
+    color:var(--off-white);
+    font-size: 1.5em;
+    word-wrap: break-word;
+}
+/* copyright */
+.copyright{
+    color:#233DE8;
+    font-size: 1.3em;
+}
+footer span{
+    color: var(--secondary-clr);
+}
+footer .social-icons a{
+    font-size: 1.5em;
+}
 /* modules */
 header {
     background-color: var(--main-clr);
@@ -270,4 +290,11 @@ header {
 section {
     padding: 20px 150px;
     min-height: 100vh;
+}
+
+footer{
+    padding:2em;
+    background:var(--black);
+    display: flex;
+    justify-content: space-between;
 }
