@@ -8,6 +8,29 @@
   #233DE8
 */
 /* base */
+:root {
+    --main-clr: #0C2EE8;
+    --dark-main-clr: #1b0aa0;
+    --secondary-clr: #E82334;
+    --handle-clr: #233DE8;
+    --mood1-clr: #00E836;
+    --mood2-clr: #E8BA23;
+    --off-white: #999;
+    --white: #fff;
+    --black: #111;
+
+    /* --main-color: #111;
+    --dark-main-color: #000;
+    --secondary-color: #E82334;
+    --handle-clr: #233DE8;
+    --mood-color: #00E836;
+    --mood-color:#E8BA23;
+    --off-white:#999;
+    --white:#fff;
+    --on-black:#111;
+    --black:#000; */
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -23,7 +46,7 @@
 
 /* component */
 .logo {
-    color: #E82334;
+    color: var(--secondary-clr);
     font-variant: small-caps;
     font-weight: 800;
     font-size: 2.5em;
@@ -37,22 +60,22 @@
 }
 
 .navigation a {
-    color: #ccc;
+    color: var(--white);
     font-weight: 500;
     font-size: 1.1em;
 }
 
 .navigation a:hover {
-    color: #E82334;
+    color: var(--secondary-clr);
 }
 
 /* the main section */
 .main {
     width: 100%;
-    min-height: 90vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(to top right, #999, #fff);
+    background: linear-gradient(to top right, var(--off-white), var(--white));
 }
 
 .main>div {
@@ -69,7 +92,7 @@
     display: inline-block;
     font-size: 3em;
     font-weight: 600;
-    color: #0C2EE8;
+    color: var(--main-clr);
 }
 
 /* style the quote */
@@ -81,15 +104,15 @@
 }
 
 .main h3 span {
-    color: #233DE8;
+    color: var(--secondary-clr);
 }
 
 /* style the view work button */
 .btn {
     display: inline-block;
     margin-top: 15px;
-    color: #fff;
-    background-color: #E82334;
+    color: var(--white);
+    background-color: var(--secondary-clr);
     padding: 15px;
     border-radius: 20px;
     align-self: flex-end;
@@ -97,7 +120,7 @@
 }
 
 .btn:hover {
-    background-color: #233DE8;
+    background-color: var(--handle-clr);
     transform: scale(1.1);
 }
 
@@ -106,28 +129,37 @@
 }
 
 .social-icons a {
-    color: #E82334;
+    color: var(--secondary-clr);
     font-size: 2em;
     padding: 5px;
 }
 
 .social-icons a:hover {
-    color: #233DE8;
+    color: var(--handle-clr);
 }
 
 /* the services section */
 .cards {
-    background: linear-gradient(to right bottom, #0C2EE8, #1b0aa0);
+    background: linear-gradient(to right bottom, var(--main-clr), var(--dark-main-clr));
     min-height: 100vh;
 }
 
 .title {
     text-align: center;
-    color: #eee;
+    color: var(--white);
     font-weight: 800;
     font-size: 2em;
     margin-bottom: 30px;
-    margin-top: 50px;
+    margin-top: 60px;
+    text-shadow: 1px 0 white, 0 -1px white, 0 1px white, -1px 0 white;
+}
+
+.title-blu {
+    color: var(--main-clr);
+}
+
+.title-red {
+    color: var(--secondary-clr);
 }
 
 /* the cards */
@@ -135,15 +167,15 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    row-gap: 2em;
+    row-gap: 1.8em;
 }
 
 /* the individual card */
 .card {
-    background: #0C2EE8ee;
+    background: var(--main-clr);
     width: 30%;
     border-radius: 10px;
-    color: #fff;
+    color: var(--white);
     box-shadow: 0 0 25px #00000099;
     padding: 20px;
 }
@@ -153,7 +185,7 @@
 }
 
 .icon {
-    color: #E82334;
+    color: var(--secondary-clr);
     font-size: 8em;
     text-align: center;
     text-shadow: 1px 0 white, 0 -1px white, 0 1px white, -1px 0 white;
@@ -167,20 +199,20 @@
     font-size: 1.3em;
     font-weight: 700;
     margin: 10px;
-    color: #E82334;
+    color: var(--secondary-clr);
 }
 
 /* projects */
 .projects {
-    background-image: linear-gradient(to bottom right, #999, #fff);
+    background-image: linear-gradient(to top right, var(--off-white), var(--white));
 }
 
 .project-card {
-    background-color: #fff;
+    background: var(--white);
     overflow: hidden;
     width: 30%;
     min-height: 14em;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-radius: 5px;
 }
 
@@ -190,7 +222,6 @@
 
 .project-card:hover .project-image {
     opacity: .9;
-    ;
 }
 
 .project-image img {
@@ -207,7 +238,7 @@
     justify-content: space-between;
     font-weight: 800;
     margin-top: 10px;
-    color: #0C2EE8;
+    color: var(--main-clr);
 }
 
 .project-info {
@@ -215,16 +246,16 @@
 }
 
 .more-details {
-    color: #E82334;
+    color: var(--secondary-clr);
 }
 
 .more-details:hover {
-    color: #233DE8;
+    color: var(--handle-clr);
 }
 
 /* modules */
 header {
-    background-color: #0C2EE8;
+    background-color: var(--main-clr);
     width: 100%;
     position: sticky;
     z-index: 5;
@@ -232,7 +263,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 0 150px;
-    min-height: 10vh;
+    min-height: 8vh;
     top: 0;
 }
 
