@@ -294,6 +294,10 @@
     width: 25%;
 }
 
+.skills li:hover .skills-icon {
+    transform: scale(1.4);
+}
+
 /* the contact section */
 .contact {
     min-height: 84vh;
@@ -390,6 +394,10 @@ footer {
         font-size: 12px;
     }
 
+    .info h3 {
+        font-size: 1.4em;
+    }
+
     .card, .project-card {
         width: 95%;
     }
@@ -421,6 +429,7 @@ footer {
     body {
         font-size: 10px;
     }
+
 
     .navigation {
         width: 80%;
