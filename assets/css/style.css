@@ -12,25 +12,17 @@
     --off-white: #999;
     --white: #fff;
     --black: #111;
-    /* --main-color: #0C2EE8;
-    --dark-main-color: #1b0aa0;
-    --secondary-color: #E82334;
-    --handle-clr: #233DE8;
-    --mood-color: #00E836;
-    --mood-color:#E8BA23;
-    --off-white:#999;
-    --white:#fff;
-    --on-black:#111;
-    --black:#000; */
 }
 
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: all .5s;
+    outline: none;
 }
 
 :link, :visited {
@@ -246,6 +238,62 @@
     color: var(--handle-clr);
 }
 
+/* the skills section */
+.skills {
+    background: linear-gradient(to top right, var(--main-clr), var(--dark-main-clr));
+    color: var(--white);
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+}
+
+.skills li :nth-child(2) {
+    width: 100%;
+}
+
+.bar {
+    display: block;
+    background: var(--main-clr);
+    height: 2px;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--secondary-clr);
+    margin-top: 10px;
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background-color: var(--secondary-clr);
+}
+
+.html {
+    width: 95%;
+}
+
+.css {
+    width: 90%;
+}
+
+.javascript {
+    width: 50%;
+}
+
+.bootstrap {
+    width: 85%;
+}
+
+.sass {
+    width: 90%;
+}
+
+.skills-icon {
+    font-size: 6em;
+    width: 25%;
+}
+
 /* the contact section */
 .contact {
     min-height: 84vh;
@@ -361,6 +409,11 @@ footer {
 
     .navigation {
         width: 70%;
+    }
+
+    .skills li {
+        flex-direction: column;
+        margin-bottom: 2em;
     }
 }
 
