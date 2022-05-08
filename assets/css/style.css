@@ -125,7 +125,7 @@
 
 /* the services section */
 .cards {
-    background: linear-gradient(to right bottom, var(--main-clr), var(--dark-main-clr));
+    background: linear-gradient(to right top, var(--main-clr), var(--dark-main-clr));
     min-height: 100vh;
 }
 
@@ -189,7 +189,7 @@
 
 /* projects */
 .projects {
-    background-image: linear-gradient(to top right, var(--off-white), var(--white));
+    background-image: linear-gradient(to bottom right, var(--main-clr), var(--dark-main-clr));
 }
 
 .project-card {
@@ -300,6 +300,7 @@
 
 /* the contact section */
 .contact {
+    background:linear-gradient(to bottom right,var(--main-clr),var(--dark-main-clr));
     min-height: 84vh;
 }
 
